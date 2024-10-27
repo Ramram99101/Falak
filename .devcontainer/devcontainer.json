@@ -1,0 +1,16 @@
+{
+    "name": "Falak Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
+    "postStartCommand": "echo '*'; echo '*         @VIKKI_OWNER Bot Running      *'; echo '*'; python /workspaces/Falak/VIKKI.py",
+    "postCreateCommand": "pip install pymongo python-telegram-bot pyTelegramBotAPI certifi && chmod +x /workspaces/Falak/*",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python"
+            },
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}
